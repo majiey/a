@@ -20,10 +20,6 @@ jobs:
 
     steps:
 
-      - name: 'Checkout codes' # 步骤一，获取仓库代码
-
-        uses: actions/checkout@v1
-
       - name: '访问备份功能的php文件' # 步骤二，执行sh命令文件
 
         run: curl http://mahaoxuan123.iink.ga/bf.php # 运行命令。（注意，运行目录是仓库根目录）
