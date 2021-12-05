@@ -5,12 +5,9 @@ name: '备份博客'
  
 
 on:
-
   schedule:
-
-  # 定时任务，在每天的5点推送天气信息到邮箱
-
-    - cron: '5 * * * *'
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '5 * * * *'
 
 jobs:
 
